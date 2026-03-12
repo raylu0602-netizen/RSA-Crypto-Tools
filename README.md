@@ -1,7 +1,8 @@
 ﻿🔐 RSA-Crypto-Tools: 數論與基礎密碼學實作
 
     這是一個使用 Python 從零開始實作的 RSA 非對稱加密工具。
-    本專案不依賴高層加密庫（如 PyCryptodome），而是直接實作數論中的核心演算法，並整合了 Tkinter GUI 介面，提供直觀的金鑰管理與訊息傳遞功能。
+    本專案不依賴高層加密庫（如 PyCryptodome），而是直接實作數論中的核心演算法，並整合了 Tkinter GUI 介面，
+    提供直觀的金鑰管理與訊息傳遞功能。
     
 🚀 功能亮點完整 RSA 流程：包含大質數生成、金鑰配對、加密及解密。
 
@@ -19,7 +20,8 @@
 🛠️ 專案架構
 
     Crypto-Math-Tools/
-    ├── GUI.py           # Tkinter 介面邏輯與交互設計
+    ├── GUI.py           # Tkinter 介面邏輯與交互設計(舊版)
+    ├── GUI2.py          # Tkinter 介面邏輯與交互設計(新版：加入了使用朋友的金鑰等功能)
     ├── RSACipher.py     # RSA 核心類別與金鑰管理
     ├── math_utils.py    # 數論基礎演算法庫 (GCD, EEA, Miller-Rabin)
     └── README.md        # 專案說明文件
@@ -41,3 +43,4 @@
         1.理解非對稱加密中「公鑰加密、私鑰解密」的原理。
         2.掌握 O(log n) 時間複雜度的演算法設計。
         3.練習 Python 的模組化開發與 Tkinter GUI 佈局。                                                
+
