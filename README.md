@@ -10,10 +10,12 @@
     自動化工具箱：整合一鍵複製金鑰與密文的功能，優化使用者體驗。
     純 Python 實作：核心數學運算均由原生程式碼達成，適合學習演算法邏輯。
 🧠 核心演算法說明本專案實作了密碼學中多個經典的數論演算法：
-1. 擴展歐幾里得演算法 (Extended Euclidean Algorithm)用於計算模反元素 (Modular Multiplicative Inverse)。在已知公鑰 $e$ 與 $\phi(n)$ 的情況下，求解滿足下式的私鑰 $d$：  $$ed \equiv 1 \pmod{\phi(n)}$$
+1. 擴展歐幾里得演算法 (Extended Euclidean Algorithm)用於計算模反元素 (Modular Multiplicative Inverse)。
+   在已知公鑰 $e$ 與 $\phi(n)$ 的情況下，求解滿足下式的私鑰 $d$：  $$ed \equiv 1 \pmod{\phi(n)}$$
     
-2.  Miller-Rabin 質數測試由於傳統試除法效率過低，專案採用 Miller-Rabin 機率性測試來確保生成的 $p, q$ 為大質數，確保金鑰生成的效率與安全性。
-3.  快速冪取模 (Modular Exponentiation)利用平方求模法處理超大數量的次方運算，避免記憶體溢位並大幅提升運算速度。
+3.  Miller-Rabin 質數測試
+    由於傳統試除法效率過低，專案採用 Miller-Rabin 機率性測試來確保生成的 $p, q$ 為大質數，確保金鑰生成的效率與安全性。
+5.  快速冪取模 (Modular Exponentiation)利用平方求模法處理超大數量的次方運算，避免記憶體溢位並大幅提升運算速度。
     1.  加密： $C = M^e \pmod n$ 
     2.  解密： $M = C^d \pmod n$
 
@@ -43,5 +45,6 @@
         1.理解非對稱加密中「公鑰加密、私鑰解密」的原理。
         2.掌握 O(log n) 時間複雜度的演算法設計。
         3.練習 Python 的模組化開發與 Tkinter GUI 佈局。                                                
+
 
 
